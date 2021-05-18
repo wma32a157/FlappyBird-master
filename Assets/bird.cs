@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class bird : MonoBehaviour
 {
     new public Rigidbody2D rigidbody2D;
-    new Animator animator;
+    public new Animator animator;
     public void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -19,18 +18,22 @@ public class bird : MonoBehaviour
         // Mouse Use or Space key Ues
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            if(Time.time < 0.7f)
+            if (Time.time < 0.7f)
             {
-            Vector2 force;
-            force.x = 0;
-            force.y = forceY;
-            rigidbody2D.AddForce(force);
-            //rigidbod2D // 낙하중 -> 멈추고 나서 -> 힘을 줘야 force적용됨
-            rigidbody2D.velocity = Vector2.zero;// new Vector2
-            rigidbody2D.AddForce(force);
+                Vector2 force;
+                force.x = 0;
+                force.y = forceY;
+                rigidbody2D.AddForce(force);
+                //rigidbod2D // 낙하중 -> 멈추고 나서 -> 힘을 줘야 force적용됨
+                rigidbody2D.velocity = Vector2.zero;// new Vector2
+                rigidbody2D.AddForce(force);
 
-            //날개 펄럭
-            animator.Play("Flap", 0, 0);
+                //날개 펄럭
+                animator.Play("Flap", 0, 0);
+
+                // 스크롤 하는 것들 다 멈추자
+                GameManager.instace.scrollSpeedXMuItiply = 0;
+
             }
         }
 
