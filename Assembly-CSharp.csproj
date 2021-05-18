@@ -56,23 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\bird.cs" />
     <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Column.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\GOHelper.cs" />
+    <Compile Include="Assets\Repos.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\MyExtension.cs" />
     <Compile Include="Assets\Tutorial Flappy Bird\Scripts\ColumnPool.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\TimeController.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\ScrollingObject.cs" />
+    <Compile Include="Assets\ColumnSpawner.cs" />
     <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Bird.cs" />
     <Compile Include="Assets\Tutorial Flappy Bird\Scripts\RepeatingBackground.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\GameControl.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\ScrollingObject.cs" />
-    <Compile Include="Assets\bird.cs" />
     <Compile Include="Assets\ScrollX.cs" />
-    <Compile Include="Assets\Repos.cs" />
-    <Compile Include="Assets\ColumnSpawner.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\GOHelper.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\MyExtension.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\GORotate.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\TimeController.cs" />
-    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\ChangeTextureOffset.cs" />
     <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\GODestroyer.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\GORotate.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\GameControl.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Tutorial Flappy Bird\Scripts\Common\ChangeTextureOffset.cs" />
+    <Compile Include="Assets\CodePhyBird.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Flappy Bird Style\_ReadMe.txt" />

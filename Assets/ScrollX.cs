@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +10,9 @@ public class ScrollX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        // ¹æ¹ý 1
-       transform.Translate(speedX * Time.deltaTime, 0, 0);
+
+        // ë°©ë²• 1
+        transform.Translate(speedX * GameManager.instace.scrollSpeedXMuItiPly * Time.deltaTime, 0, 0);
 
         //var pos = transform.position;
         //pos.x += speedX * Time.deltaTime;
